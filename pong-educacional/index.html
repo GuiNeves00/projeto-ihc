@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo de Pong</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #222;
+        }
+
+        canvas {
+            border: 2px solid #444;
+        }
+
+        #instructions {
+            position: absolute;
+            bottom: 20px;
+            color: white;
+            text-align: center;
+            font-family: Arial, sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="game-container"></div>
+    <div id="instructions">
+        Pressione ESPAÇO para iniciar<br>
+        Jogador 1: W (cima), S (baixo)<br>
+        Jogador 2: ↑ (cima), ↓ (baixo)
+    </div>
+
+    <!--Phaser -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/phaser/3.55.2/phaser.min.js"></script>
+
+    <!--Jogo -->
+    <script src="game.js"></script>
+</body>
+
+</html>
